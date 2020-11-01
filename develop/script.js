@@ -1,47 +1,56 @@
+console.log(document);
 
-var quotesAPI = "https://favqs.com/api/qotd"
+var searchButton = document.body.querySelector("button")
+var inputField = document.querySelector("input")
 
-fetch(quotesAPI)
+searchButton.addEventListener("click", function (event) {
+    event.preventDefault()
+    var userQuery = inputField.value
+    console.log(userQuery)
+    var quotesAPI = "https://favqs.com/api/quotes/?filter=" + userQuery
 
-    .then(function (response) {
-
-        return response.json();
+    fetch(quotesAPI, {
+        headers: {
+            Authorization: 'Token token=4d5c8c37865f2070ffb40397f22c5dad'
+        }
     })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+            // console.log(data.quotes[0].tags);
 
-    .then(function (data) {
+            // // declaring variable in Global Memory to use in unSplash API query parameter
+            // tags = JSON.stringify(data.quote.tags)
 
-        console.log(data);
-        console.log(data.quote.tags);
+            // var randomQuoteDiv = document.createElement("div");
+            // document.body.append(randomQuoteDiv);
+            // var randomQuote = document.createElement("h2");
+            // randomQuote.textContent = data.quote.body
+            // randomQuoteDiv.append(randomQuote);
+            // var unsplashAPI = "https://api.unsplash.com/search/photos?query=" + tags + "&client_id=nTDcb20SlPlnOUb5B3Z5i9q1D8woTYppcHS-nLzA2Ho"
 
-        // declaring variable in Global Memory to use in unSplash API query parameter
-        tags = JSON.stringify(data.quote.tags)
+            // fetch(unsplashAPI)
 
-        var randomQuoteDiv = document.createElement("div");
-        document.body.append(randomQuoteDiv);
-        var randomQuote = document.createElement("h2");
-        randomQuote.textContent = data.quote.body
-        randomQuoteDiv.append(randomQuote);
-        var unsplashAPI = "https://api.unsplash.com/search/photos?query=" + tags + "&client_id=nTDcb20SlPlnOUb5B3Z5i9q1D8woTYppcHS-nLzA2Ho"
+            //     .then(function (response) {
 
-        fetch(unsplashAPI)
+            //         return response.json();
+            //     })
 
-            .then(function (response) {
+            //     .then(function (data) {
 
-                return response.json();
-            })
+            //         console.log(data);
 
-            .then(function (data) {
+            //         var randomPicDiv = document.createElement("div");
+            //         document.body.append(randomPicDiv);
+            //         var randomPicImg = document.createElement("img");
+            //         randomPicImg.setAttribute("src", data.results[0].urls.small);
+            //         randomPicDiv.append(randomPicImg);
 
-                console.log(data);
+            //         console.log(data.results[0].urls.small)
+            //     })
 
-                var randomPicDiv = document.createElement("div");
-                document.body.append(randomPicDiv);
-                var randomPicImg = document.createElement("img");
-                randomPicImg.setAttribute("src", data.results[0].urls.small);
-                randomPicDiv.append(randomPicImg);
+        })
 
-                console.log(data.results[0].urls.small)
-            })
-
-    })
-
+})
