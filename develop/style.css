@@ -1,65 +1,43 @@
-html {
-  font: normal 16px / 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  background: white;
-}
-
 /* Nav Bar Background */
 .uk-navbar {
   background: #287bff;
   border: none;
-  border-radius: 4px;
 }
 
-/* Nav Bar List Placement */
+/* Nav Bar Nav Placement */
 .uk-navbar-nav {
   margin: 10px;
-  padding: 0;
-  list-style: none;
   float: right;
 }
 
-/* Nav Bar Text Styling */
+/* Nav Bar Text */
 .uk-navbar-nav > li > a {
   color: white;
   font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
+}
+
+/* Hamburger Menu Button */
+#sidebar-button {
+  margin: 10px;
+  float: right;
 }
 
 h1 {
   font-family: sans-serif;
-  margin-bottom: 40px;
-  font-size: 48px;
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
-/* this class control 'quotePic and Search bar/button viewport placement */
-.row {
+/* Grid */
+.uk-grid {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
-/* Search Bar */
-.uk-form-icon input[type="text"] {
-  height: 30px;
-  max-width: 100%;
-  padding: 4px 6px;
-  border: 1px solid #dddddd;
-  background: #ffffff;
-  color: #444444;
-  -webkit-transition: all 0.2s linear;
-  -webkit-transition-property: border, background, color, box-shadow, padding;
-  transition: all 0.2s linear;
-  transition-property: border, background, color, box-shadow, padding;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-/* Search Button */
+/* Go button */
 .uk-button {
+  background-color: #287bff;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background: #287bff;
   border-radius: 5px;
 }
