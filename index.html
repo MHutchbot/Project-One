@@ -4,12 +4,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project One</title>
+    <title>Home | quotePic</title>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- UIkit CSS -->
+    <!-- UIkit Framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+    <!-- UIkit CSS Components -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.almost-flat.min.css" integrity="sha512-DkvvvFX378AbI63mLDmiru0dHLk1a3GrSd6cf3xuyqNwmEx3RKq9JdO8bdiZzZtNN9bsu2BIN2Dn9A3MNM5H0g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.gradient.min.css" integrity="sha512-DkvvvFX378AbI63mLDmiru0dHLk1a3GrSd6cf3xuyqNwmEx3RKq9JdO8bdiZzZtNN9bsu2BIN2Dn9A3MNM5H0g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.min.css" integrity="sha512-DkvvvFX378AbI63mLDmiru0dHLk1a3GrSd6cf3xuyqNwmEx3RKq9JdO8bdiZzZtNN9bsu2BIN2Dn9A3MNM5H0g==" crossorigin="anonymous" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./develop/style.css" />
   </head>
@@ -27,21 +31,29 @@
       </div>
     </nav>
 
-    <!-- Grid -->
-    <div class="uk-grid">
-      <div class="uk-width-1-1">
-        <h1>How are you feeling?</h1>
-        <form class="uk-form">
-          <fieldset data-uk-margin>
-            <!-- Search Input Field -->
-            <input type="text" placeholder="ex. happy" class="uk-width-1-2" />
-            <!-- Search Button -->
-            <button id='search-button' class="uk-button">Go</button>
-          </fieldset>
-        </form>
-      </div>
+    <!-- Slideshow -->
+    <div class="slideshow-wrapper">
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+                <div class="uk-width-1-1">
+                    <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true}">
+                        <ul class="uk-slideshow" >
+                            <li><img src="assets/adrien-olichon-4jJa0uxN44w-unsplash.jpg" alt=""></li>
+                            <li><img src="assets/sydney-rae-i0kQM6OdeVc-unsplash.jpg" alt=""></li>
+                        </ul>
+                        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
+                        <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
+                    </div>
+                </div>
+                <!-- column -->
+            </div>
+            <!-- grid -->
+        </div>
+        <!-- container -->
     </div>
-
+    <!-- slideshow wrapper -->
+    
+    
     <!-- Mobile Sidebar -->
     <div id="sidebar" class="uk-offcanvas">
       <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
@@ -52,6 +64,10 @@
       </div>
     </div>
 
+    <!-- UIkit Javascript Components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.min.js" integrity="sha512-JhBjb6CAwY/C76ZJZfXTWak7ickoVivZieDm/sbhsKYFJQmmu24MnJ3bCFTEwH4sno3KmKGXUiSo0cqtf9nmbA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow-fx.min.js" integrity="sha512-XWpenWjKLCDdsrx9pptv/u20I3mbfoCBO4AxkMHwsoHp+hD3eivdj5lReC1UdPMRIxCLh3nLGVywN7nWvh9JgQ==" crossorigin="anonymous"></script>
+    <!-- Javascript -->
     <script src="./develop/script.js"></script>
   </body>
 </html>
