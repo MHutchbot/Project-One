@@ -10,6 +10,7 @@ searchButton.addEventListener("click", function (event) {
     console.log(userQuery)
     var quotesAPI = "https://favqs.com/api/quotes/?filter=" + userQuery
 
+
     fetch(quotesAPI, {
         headers: {
             Authorization: 'Token token=4d5c8c37865f2070ffb40397f22c5dad'
@@ -51,6 +52,7 @@ searchButton.addEventListener("click", function (event) {
 
             //         console.log(data.results[0].urls.small)
             //     })
+
 
         })
 
