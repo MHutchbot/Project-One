@@ -1,6 +1,7 @@
 console.log(document);
 
-var searchButton = document.body.querySelector("button")
+var searchButton = document.getElementById("search-button") //changed querySelector to getElementById to match HTML search button
+
 var inputField = document.querySelector("input")
 
 searchButton.addEventListener("click", function (event) {
@@ -8,6 +9,7 @@ searchButton.addEventListener("click", function (event) {
     var userQuery = inputField.value
     console.log(userQuery)
     var quotesAPI = "https://favqs.com/api/quotes/?filter=" + userQuery
+
 
     fetch(quotesAPI, {
         headers: {
@@ -50,6 +52,7 @@ searchButton.addEventListener("click", function (event) {
 
             //         console.log(data.results[0].urls.small)
             //     })
+
 
         })
 

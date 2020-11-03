@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project One</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project One</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./develop/style.css" />
+  </head>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- UIkit CSS
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
-    UIkit JS
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="./develop/style.css" />
-  <header Authorization: Token B@3uY@5KYzYinh7></header>
-</head>
+  <body>
+    <!-- Navigation Bar Visible on Large Viewports-->
+    <nav class="uk-navbar">
+      <div class="uk-container uk-container-center">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active uk-visible-large"><a href="">Home</a></li>
+          <li class="uk-parent uk-visible-large"><a href="">Developers</a></li>
+        </ul>
+        <!-- Hamburger Menu Button Hidden on Large Viewports-->
+        <button id="sidebar-button" href="#sidebar" class="uk-button uk-navbar-toggle uk-hidden-large" data-uk-offcanvas="{target:'#sidebar'}"></button>
+      </div>
+    </nav>
 
-<body>
+    <!-- Grid -->
+    <div class="uk-grid">
+      <div class="uk-width-1-1">
+        <h1>How are you feeling?</h1>
+        <form class="uk-form">
+          <fieldset data-uk-margin>
+            <!-- Search Input Field -->
+            <input type="text" placeholder="ex. happy" class="uk-width-1-2" />
+            <!-- Search Button -->
+            <button id='search-button' class="uk-button">Go</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
 
-  <!-- Navigation Bar -->
-  <nav class="uk-navbar">
-    <ul class="uk-navbar-nav">
-      <li class="uk-active"><a href="">Home</a></li>
-      <li class="uk-parent"><a href="">Developers</a></li>
-    </ul>
-  </nav>
-  <div class="container"></div>
-  <div class="row">
-    <!-- Search Bar -->
-    <h1>quotePic</h1>
-    <form class="uk-form-icon">
-      <i class="uk-icon-search"></i>
-      <input type="text" placeholder="Search quotes" class="uk-form-width-large" />
-      <button class="uk-button">Search</button>
-    </form>
-  </div>
-  </div>
+    <!-- Mobile Sidebar -->
+    <div id="sidebar" class="uk-offcanvas">
+      <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+        <ul class="uk-nav uk-nav-offcanvas">
+          <li class="uk-active"><a href="">Home</a></li>
+          <li class="uk-parent"><a href="">Developers</a></li>
+        </ul>
+      </div>
+    </div>
 
-  <script src="./develop/script.js"></script>
-</body>
-
+    <script src="./develop/script.js"></script>
+  </body>
 </html>
