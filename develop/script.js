@@ -24,26 +24,41 @@ searchButton.addEventListener("click", function (event) {
         .then(function (data) {
             console.log(data);
             // creates div underneath search bar and appends to document
-            var quoteDiv = document.createElement("div");
-            document.body.children[1].append(quoteDiv);
+            // var quoteDiv = document.createElement("div");
+            // document.body.children[1].append(quoteDiv);
+            var liEl = document.querySelectorAll("li")
 
             // for loop to create list items for first 12 quotes
-            for (var i = 0; i < 12; i++) {
-                // creates li, adds quote and author as text content and appends to quoteDiv
-                var liEl = document.createElement("li")
-                liEl.textContent = '"' + data.quotes[i].body + '" ' + '- ' + data.quotes[i].author
-                quoteDiv.append(liEl)
+            for (var i = 2; i < 14; i++) {
+                // declares figure, img, and figcaption elements and the assigns classes/attributes and appends
+                var figureEl = document.createElement("figure")
+                figureEl.setAttribute("class", "uk-overlay")
+                liEl[i].append(figureEl)
+
+                var imgEl = document.createElement("img")
+                imgEl.setAttribute("src", "../assets/quote-background.png")
+                imgEl.setAttribute("style", "z-index: -1")
+                figureEl.append(imgEl)
+                var figCaptionEl = document.createElement("figcaption")
+                figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center")
+                figCaptionEl.setAttribute("style", "z-index: 1")
+                console.log(data.quotes[i].author)
+                console.log(data.quotes[i].body.length)
+                // if (data.quote[i].body.length <= )
+                figureEl.append(figCaptionEl)
+                figCaptionEl.textContent = '"' + data.quotes[i].body + '" ' + '- ' + data.quotes[i].author
 
                 // creates select button, adds id, and appends to liEl
                 quoteButton = document.createElement("button")
                 quoteButton.textContent = "Select"
+                quoteButton.setAttribute("class", "uk-button")
                 quoteButton.setAttribute("id", data.quotes[i].author)
-                liEl.append(quoteButton)
+                figCaptionEl.append(quoteButton)
 
                 // adds event handler to quoteButton
                 quoteButton.addEventListener("click", function (event) {
                     // for loop to match button id with author and sets key as author and value as quote in local storage
-                    for (var i = 0; i < 12; i++) {
+                    for (var i = 2; i < 14; i++) {
                         if (event.target.id === data.quotes[i].author) {
                             console.log(data.quotes[i].body)
                             localStorage.setItem(event.target.id, data.quotes[i].body)
