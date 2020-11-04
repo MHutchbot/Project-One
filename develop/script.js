@@ -40,7 +40,7 @@ searchButton.addEventListener("click", function (event) {
                 imgEl.setAttribute("style", "z-index: -1")
                 figureEl.append(imgEl)
                 var figCaptionEl = document.createElement("figcaption")
-                figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center")
+                figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center quote-text")
                 figCaptionEl.setAttribute("style", "z-index: 1")
                 console.log(data.quotes[i].author)
                 console.log(data.quotes[i].body.length)
@@ -51,7 +51,7 @@ searchButton.addEventListener("click", function (event) {
                 // creates select button, adds id, and appends to liEl
                 quoteButton = document.createElement("button")
                 quoteButton.textContent = "Select"
-                quoteButton.setAttribute("class", "uk-button")
+                quoteButton.setAttribute("class", "uk-button select-quote")
                 quoteButton.setAttribute("id", data.quotes[i].author)
                 figCaptionEl.append(quoteButton)
 
