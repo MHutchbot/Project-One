@@ -41,3 +41,15 @@ h1 {
   color: white;
   border-radius: 5px;
 }
+
+.slideset-wrapper {
+  margin-top: -100px;
+}
+
+.uk-slidenav-previous {
+  color: white!important;
+}
+
+.uk-slidenav-next {
+  color: white!important;
+}
