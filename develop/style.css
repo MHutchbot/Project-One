@@ -45,3 +45,11 @@ h1 {
 .slideset-wrapper {
   margin-top: -100px;
 }
+
+.uk-slidenav-previous {
+  color: white!important;
+}
+
+.uk-slidenav-next {
+  color: white!important;
+}
