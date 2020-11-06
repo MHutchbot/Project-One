@@ -61,8 +61,8 @@ searchButton.addEventListener("click", function (event) {
                 liEl[i + 2].append(figureEl)
 
                 var imgEl = document.createElement("img")
-                imgEl.setAttribute("src", "../assets/quote-background.png")
-                imgEl.setAttribute("style", "z-index: -1")
+                imgEl.setAttribute("src", "../assets/flat-background.png")
+                imgEl.setAttribute("style", "z-index: -1; height: 300px") //Mychal added 'height' property
                 figureEl.append(imgEl)
                 var figCaptionEl = document.createElement("figcaption")
                 figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center quote-text")
