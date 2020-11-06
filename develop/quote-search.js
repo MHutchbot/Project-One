@@ -12,7 +12,7 @@ var slideSet = document.getElementById("slideset")
 var fieldSet = document.querySelector("fieldset")
 var clearButton = document.createElement("button")
 clearButton.setAttribute("class", "uk-button")
-clearButton.textContent = "Clear History"
+clearButton.textContent = "Restart"
 
 clearButton.addEventListener("click", function () {
     location.reload()
