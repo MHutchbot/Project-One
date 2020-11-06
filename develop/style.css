@@ -29,7 +29,39 @@ h1 {
   font-size: 36px;
 }
 
-/* Grid */
+#header-h1 {
+  padding-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+.header-wrapper {
+  padding-bottom: 40px;
+  padding-top: 40px
+}
+
+.header-grid {
+  margin-top: auto !important;
+  margin-bottom: auto;
+}
+
+.bio-wrapper {
+  margin: 10px;
+  border-radius: 5px;
+  border: solid rgb(196, 196, 196) .5px
+}
+
+.bio-grid {
+  margin-top: auto!important;
+}
+
+.bio-text {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px
+}
+
 .uk-grid {
   text-align: center;
   margin-top: 100px;
