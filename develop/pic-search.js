@@ -7,7 +7,7 @@ var devButton = navButton[1]
 // declaring variables in global memory to store values from Local Storage
 var userKeyword = localStorage.getItem("query")
 var quotePick = localStorage.getItem("quotePick")
-console.log(quoteKeyword)
+
 
 // console.log(data.quotes[0].tags);
 
@@ -19,25 +19,39 @@ console.log(quoteKeyword)
 // var randomQuote = document.createElement("h2");
 // randomQuote.textContent = data.quote.body
 // randomQuoteDiv.append(randomQuote);
-var unsplashAPI = "https://api.unsplash.com/search/photos?query=" + userKeyword + "&client_id=nTDcb20SlPlnOUb5B3Z5i9q1D8woTYppcHS-nLzA2Ho"
+document.onload = getUnSplash()
 
-fetch(unsplashAPI)
 
-    .then(function (response) {
+function getUnSplash() {
+    var unsplashAPI = "https://api.unsplash.com/search/photos?query=" + userKeyword + "&per_page=15&orientation=portrait&client_id=nTDcb20SlPlnOUb5B3Z5i9q1D8woTYppcHS-nLzA2Ho"
 
-        return response.json();
-    })
+    fetch(unsplashAPI)
 
-    .then(function (data) {
+        .then(function (response) {
 
-        console.log(data);
+            return response.json();
+        })
 
-        var randomPicDiv = document.createElement("div");
-        document.body.append(randomPicDiv);
-        var randomPicImg = document.createElement("img");
-        randomPicImg.setAttribute("src", data.results[0].urls.small);
-        randomPicDiv.append(randomPicImg);
+        .then(function (data) {
 
-        console.log(data.results[0].urls.small)
-    })
+            console.log(data);
+            for (var i = 0; i < 12; i++) {
+                var liEl = document.querySelectorAll("li")
+                figureEl = document.createElement("figure")
+                figureEl.setAttribute("class", "uk-overlay")
+                liEl[i + 2].append(figureEl)
 
+                var imgEl = document.createElement("img")
+                imgEl.setAttribute("src", data.results[i].urls.small)
+                imgEl.setAttribute("style", "z-index: -1")
+                figureEl.append(imgEl)
+
+                var figCaptionEl = document.createElement("figcaption")
+                figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center quote-text")
+                figCaptionEl.setAttribute("style", "z-index: 1")
+                figureEl.append(figCaptionEl)
+                figCaptionEl.textContent = localStorage.getItem("quotePick")
+            }
+
+        })
+}

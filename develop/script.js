@@ -7,11 +7,29 @@ var devButton = navButton[1]
 // declaring variables in global memory to store locations of search button and input field
 var searchButton = document.getElementById("search-button") //changed querySelector to getElementById to match HTML search button
 var inputField = document.querySelector("input")
+var slideSet = document.getElementById("slideset")
 
+var fieldSet = document.querySelector("fieldset")
+var clearButton = document.createElement("button")
+clearButton.setAttribute("class", "uk-button")
+clearButton.textContent = "Clear History"
+
+clearButton.addEventListener("click", function () {
+    location.reload()
+})
 
 // eventlistner on the search button to call fetch function
 searchButton.addEventListener("click", function (event) {
     event.preventDefault()
+    fieldSet.setAttribute("style", "display:none")
+    document.body.children[1].children[0].append(clearButton)
+
+    // location.reload()
+
+    for (var i = 0; i < 12; i++) {
+        var figure = slideSet.children[i].firstChild
+        slideSet.children[i].removeChild(figure)
+    }
 
     // declares variable in local memory to store value from input field
     var userQuery = inputField.value
@@ -31,12 +49,13 @@ searchButton.addEventListener("click", function (event) {
         .then(function (data) {
             console.log(data);
             // declares variable in local memory to store location of <li> elements
-            var liEl = document.querySelectorAll("li")
+
 
             // for loop to create list items for first 12 quotes
             for (var i = 0; i < 12; i++) {
                 // declares figure, img, and figcaption elements and the assigns classes/attributes and appends
-                // if (data.quotes[i - 2].body.length <= 220) {
+                // if (data.quotes[i].body.length <= 120) {
+                var liEl = document.querySelectorAll("li")
                 figureEl = document.createElement("figure")
                 figureEl.setAttribute("class", "uk-overlay")
                 liEl[i + 2].append(figureEl)
@@ -67,7 +86,7 @@ searchButton.addEventListener("click", function (event) {
                     console.log('clicked')
                     console.log(event.target.id)
 
-                    for (var i = 0; i < 12; i++) {
+                    for (var i = 0; i < data.quotes.length; i++) {
 
                         if (event.target.id === data.quotes[i].author) {
 
@@ -78,7 +97,7 @@ searchButton.addEventListener("click", function (event) {
                     }
                     window.location = "../pic-search.html"
                 })
-
+                // }
             }
         })
 })
