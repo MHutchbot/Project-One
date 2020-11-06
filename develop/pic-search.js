@@ -8,19 +8,7 @@ var devButton = navButton[1]
 var userKeyword = localStorage.getItem("query")
 var quotePick = localStorage.getItem("quotePick")
 
-
-// console.log(data.quotes[0].tags);
-
-// // declaring variable in Global Memory to use in unSplash API query parameter
-// tags = JSON.stringify(data.quote.tags)
-
-// var randomQuoteDiv = document.createElement("div");
-// document.body.append(randomQuoteDiv);
-// var randomQuote = document.createElement("h2");
-// randomQuote.textContent = data.quote.body
-// randomQuoteDiv.append(randomQuote);
 document.onload = getUnSplash()
-
 
 function getUnSplash() {
     var unsplashAPI = "https://api.unsplash.com/search/photos?query=" + userKeyword + "&per_page=15&orientation=portrait&client_id=nTDcb20SlPlnOUb5B3Z5i9q1D8woTYppcHS-nLzA2Ho"
@@ -46,12 +34,12 @@ function getUnSplash() {
                 imgEl.setAttribute("style", "z-index: -1")
                 figureEl.append(imgEl)
 
-                var divEl = document.createElement("div")
-                divEl.setAttribute("class", "uk-overlay-default uk-position-cover")
-                figureEl.append(divEl)
+                // var divEl = document.createElement("div")
+                // divEl.setAttribute("class", "uk-overlay-default uk-position-cover")
+                // figureEl.append(divEl)
 
                 var figCaptionEl = document.createElement("figcaption")
-                figCaptionEl.setAttribute("class", "uk-overlay uk-position-bottom uk-dark custom-overlay")
+                figCaptionEl.setAttribute("class", "uk-position-bottom custom-overlay")
                 figCaptionEl.setAttribute("style", "z-index: 1")
                 figureEl.append(figCaptionEl)
                 figCaptionEl.textContent = localStorage.getItem("quotePick")
