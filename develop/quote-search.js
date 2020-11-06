@@ -24,13 +24,6 @@ searchButton.addEventListener("click", function (event) {
     fieldSet.setAttribute("style", "display:none")
     document.body.children[1].children[0].append(clearButton)
 
-    // location.reload()
-
-    for (var i = 0; i < 12; i++) {
-        var figure = slideSet.children[i].firstChild
-        slideSet.children[i].removeChild(figure)
-    }
-
     // declares variable in local memory to store value from input field
     var userQuery = inputField.value
     localStorage.setItem("query", userQuery)
