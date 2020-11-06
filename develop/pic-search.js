@@ -46,8 +46,12 @@ function getUnSplash() {
                 imgEl.setAttribute("style", "z-index: -1")
                 figureEl.append(imgEl)
 
+                var divEl = document.createElement("div")
+                divEl.setAttribute("class", "uk-overlay-default uk-position-cover")
+                figureEl.append(divEl)
+
                 var figCaptionEl = document.createElement("figcaption")
-                figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center quote-text")
+                figCaptionEl.setAttribute("class", "uk-overlay uk-position-bottom uk-dark custom-overlay")
                 figCaptionEl.setAttribute("style", "z-index: 1")
                 figureEl.append(figCaptionEl)
                 figCaptionEl.textContent = localStorage.getItem("quotePick")
