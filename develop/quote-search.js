@@ -1,7 +1,7 @@
 // buttons for navbar
 var navButton = document.querySelectorAll("a")
 var homeButton = navButton[0]
-homeButton.setAttribute("href", "../index.html")
+homeButton.setAttribute("href", "index.html")
 var devButton = navButton[1]
 
 // declaring variables in global memory to store locations of search button and input field
@@ -60,7 +60,7 @@ searchButton.addEventListener("click", function (event) {
                 liEl[i + 2].append(figureEl)
 
                 var imgEl = document.createElement("img")
-                imgEl.setAttribute("src", "../assets/flat-background.png")
+                imgEl.setAttribute("src", "assets/flat-background.png")
                 imgEl.setAttribute("style", "z-index: -1; height: 300px") //Mychal added 'height' property
                 figureEl.append(imgEl)
 
@@ -92,7 +92,7 @@ searchButton.addEventListener("click", function (event) {
                         }
 
                     }
-                    window.location = "../pic-search.html"
+                    window.location = "pic-search.html"
                 })
             }
         })

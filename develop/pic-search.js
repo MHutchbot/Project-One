@@ -1,7 +1,7 @@
 // buttons for navbar
 var navButton = document.querySelectorAll("a")
 var homeButton = navButton[0]
-homeButton.setAttribute("href", "../index.html")
+homeButton.setAttribute("href", "index.html")
 var devButton = navButton[1]
 
 // declaring variables in global memory to store values from Local Storage
