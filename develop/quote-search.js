@@ -17,12 +17,15 @@ clearButton.textContent = "Restart"
 clearButton.addEventListener("click", function () {
     location.reload()
 })
+var waitToAppear = function () {
+    document.body.children[1].children[0].append(clearButton)
+}
 
-// eventlistner on the search button to call fetch function
+// eventlistener on the search button to call fetch function
 searchButton.addEventListener("click", function (event) {
     event.preventDefault()
     fieldSet.setAttribute("style", "display:none")
-    document.body.children[1].children[0].append(clearButton)
+    setTimeout(waitToAppear, 500)
 
     // declares variable in local memory to store value from input field
     var userQuery = inputField.value
@@ -43,12 +46,15 @@ searchButton.addEventListener("click", function (event) {
             console.log(data);
             // declares variable in local memory to store location of <li> elements
 
-
+            var liEl = document.querySelectorAll("li")
             // for loop to create list items for first 12 quotes
+            if (data.quotes[0].body === "No quotes found") {
+                document.querySelector("h1").textContent = "No results found. Please enter a valid search term."
+                return
+            }
             for (var i = 0; i < 12; i++) {
                 // declares figure, img, and figcaption elements and the assigns classes/attributes and appends
-                // if (data.quotes[i].body.length <= 120) {
-                var liEl = document.querySelectorAll("li")
+                document.querySelector("h1").textContent = "Please select a quote"
                 figureEl = document.createElement("figure")
                 figureEl.setAttribute("class", "uk-overlay")
                 liEl[i + 2].append(figureEl)
@@ -57,12 +63,10 @@ searchButton.addEventListener("click", function (event) {
                 imgEl.setAttribute("src", "../assets/flat-background.png")
                 imgEl.setAttribute("style", "z-index: -1; height: 300px") //Mychal added 'height' property
                 figureEl.append(imgEl)
+
                 var figCaptionEl = document.createElement("figcaption")
                 figCaptionEl.setAttribute("class", "uk-overlay-panel uk-flex uk-flex-center uk-flex-middle uk-text-center quote-text")
                 figCaptionEl.setAttribute("style", "z-index: 1")
-                // console.log(data.quotes[i].author)
-                // console.log(data.quotes[i].body.length)
-                // if (data.quote[i].body.length <= )
                 figureEl.append(figCaptionEl)
                 figCaptionEl.textContent = '"' + data.quotes[i].body + '" ' + '- ' + data.quotes[i].author
 
@@ -90,7 +94,6 @@ searchButton.addEventListener("click", function (event) {
                     }
                     window.location = "../pic-search.html"
                 })
-                // }
             }
         })
 })
