@@ -65,6 +65,21 @@ h1 {
   margin-top: 100px;
 }
 
+.quote-restart-btn {
+  background-color: white !important; 
+  color: #287bff !important;
+  border-radius: 5px;
+  border: none;
+  float: left;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.quote-restart-btn:hover {
+  background-color: rgb(241, 241, 241) !important;
+  color: black !important;
+}
+
 /* Quote Search Go button */
 .uk-button {
   background-color: #287bff;
