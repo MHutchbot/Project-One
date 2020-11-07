@@ -26,7 +26,7 @@ Your project should fulfill the following requirements:
 
 ## Presentation 
 
-Presentation: [project presentation template](https://docs.google.com/presentation/d/1r5nsthn9NuqNgFx0A1x0QIs3V1x_I4mAf05W_4Jk3P8/edit?usp=sharing) to address the following: 
+[Presentation](https://docs.google.com/presentation/d/1r5nsthn9NuqNgFx0A1x0QIs3V1x_I4mAf05W_4Jk3P8/edit?usp=sharing) to address the following: 
 
 * Elevator pitch: a one minute description of your application
 
@@ -88,9 +88,9 @@ This project is graded based on the following criteria:
 
 The following gif shows the application's appearance and functionality:
 
-![Normal Flow Gif](./assets/gifs/Home_quotePic.gif)
+![Normal Flow Gif](https://github.com/MHutchbot/Project-One/blob/master/assets/gifs/Home%20_%20quotePic.gif)
 
-![Mistake Flow Gif](./assets/gifs/Quote-Search_quotePic.gif)
+![Mistake Flow Gif](https://github.com/MHutchbot/Project-One/blob/master/assets/gifs/Quote-Search%20_%20quotePic.gif)
 
 ### Repository Quality: 10%
 
@@ -114,7 +114,7 @@ The following gif shows the application's appearance and functionality:
 
 ### Presentation 10%
 
-* Presentation: [Project Presentation Template](https://docs.google.com/presentation/d/1r5nsthn9NuqNgFx0A1x0QIs3V1x_I4mAf05W_4Jk3P8/edit?usp=sharing).
+* [Project Presentation](https://docs.google.com/presentation/d/1r5nsthn9NuqNgFx0A1x0QIs3V1x_I4mAf05W_4Jk3P8/edit?usp=sharing).
 
 ### Collaboration 10%
 
