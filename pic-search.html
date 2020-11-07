@@ -1,5 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Selection | quotePic</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css"
+      integrity="sha512-j6niQhNEtTc110QAJiLnCnx/mloc73EcsfVdMgV8R2pdgoY409h3FH+Rn/YaiFsZwD+kAhZXtBhAZgTX/Ybt+w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js"
+      integrity="sha512-qYyOK0fJg7mM3DWI8oPbGnkv3nFOh9EzLsQV+SQSJ3HvC5NtmX5orKU7LcGOo9b0XrG3BzvtOJ0rRqfkEbt1Dw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.css"
+      integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.min.css"
+      integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.css"
+      integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.css"
+      integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.min.css"
+      integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.min.css"
+      integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+      crossorigin="anonymous"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./develop/style.css" />
+  </head>
 
 <head>
   <meta charset="UTF-8" />
@@ -40,49 +102,63 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./develop/style.css" />
 </head>
+    <nav class="uk-navbar">
+      <span><img class="logo" src="/assets/logo.png" alt=""></span>
+      <div class="uk-container uk-container-center">
+        <ul class="uk-navbar-nav">
+          <li class="uk-parent uk-visible-large">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="uk-parent uk-visible-large">
+            <a href="developers.html">Developers</a>
+          </li>
+        </ul>
+        <!-- Hamburger Menu Button Hidden on Large Viewports-->
+        <button
+          id="sidebar-button"
+          href="#sidebar"
+          class="uk-button uk-navbar-toggle uk-hidden-large"
+          data-uk-offcanvas="{target:'#sidebar'}"
+        ></button>
+      </div>
+    </nav>
 
-<body>
-  <!-- Navigation Bar Visible on Large Viewports-->
-  <nav class="uk-navbar">
-    <div class="uk-container uk-container-center">
-      <ul class="uk-navbar-nav">
-        <li class="uk-parent uk-visible-large">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="uk-parent uk-visible-large">
-          <a href="developers.html">Developers</a>
-        </li>
-      </ul>
-      <!-- Hamburger Menu Button Hidden on Large Viewports-->
-      <button id="sidebar-button" href="#sidebar" class="uk-button uk-navbar-toggle uk-hidden-large"
-        data-uk-offcanvas="{target:'#sidebar'}"></button>
-    </div>
-  </nav>
-  <div></div>
-  <!-- Slideset -->
-  <div class="slideset-wrapper">
-    <div class="uk-container uk-container-center">
-      <div class="uk-grid">
-        <div class="uk-width-1-1">
-          <!-- Slideset -->
-          <div data-uk-slideset="{small: 1, medium: 2, large: 3, animation: 'slide-horizontal', duration: 200}">
-            <div class="uk-slidenav-position">
-              <ul class="uk-grid uk-slideset">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
-              <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
+    <!-- Slideset -->
+    <div class="slideset-wrapper">
+      <a href="quote-search.html" class="uk-button quote-restart-btn">Restart</a>
+      <div class="uk-container uk-container-center">
+        <div class="uk-grid">
+          <div class="uk-width-1-1">
+            <!-- Slideset -->
+            <div
+              data-uk-slideset="{small: 1, medium: 2, large: 3, animation: 'slide-horizontal', duration: 200}"
+            >
+              <div class="uk-slidenav-position">
+                <ul class="uk-grid uk-slideset">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <a
+                  href=""
+                  class="uk-slidenav uk-slidenav-previous"
+                  data-uk-slideset-item="previous"
+                ></a>
+                <a
+                  href=""
+                  class="uk-slidenav uk-slidenav-next"
+                  data-uk-slideset-item="next"
+                ></a>
+              </div>
             </div>
           </div>
         </div>
