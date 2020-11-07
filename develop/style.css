@@ -116,3 +116,11 @@ h1 {
   color: white;
   font-family: sans-serif;
 }
+
+.btnDownload {
+  display: none;
+}
+
+img:hover + .btnDownload, .btnDownload:hover {
+  display: inline-block;
+}
