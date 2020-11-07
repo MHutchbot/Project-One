@@ -8,5 +8,5 @@ var devButton = navButton[1]
 // button for "Go"
 var goButton = document.getElementById("get-started-button");
 goButton.addEventListener("click", function () {
-    window.location = "quote.html"
+    window.location = "quote-search.html"
 })
