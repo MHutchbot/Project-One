@@ -88,8 +88,18 @@
     </div>
 
     <div class="uk-container uk-container-center">
-        <canvas id="canvas" style="border: .5px solid black;" height="830px" width="553">Sorry. Canvas not supported.
+        <canvas id="canvas" style="border: .5px solid gray;" height="830px" width="1553">Sorry. Canvas not supported.
             Try newest version of Google Chrome.</canvas>
+        <p>Select file <input type="file" onchange="previewImg(this);"></p>
+        <p><img id="preview"></p>
+
+        <p>Enter x <input id="x"></p>
+        <p>Enter y <input id="y"></p>
+        <p>Enter width <input id="width"></p>
+        <p>Enter height <input id="height"></p>
+
+        <p><button class="uk-button" onclick="setImg();">Set Image</button></p>
+
     </div>
     <!-- UIkit Javascript Components -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.js"
