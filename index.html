@@ -66,6 +66,7 @@
 <body>
   <!-- Navigation Bar Visible on Large Viewports-->
   <nav class="uk-navbar">
+    <span><img class="logo" src="/assets/logo.png" alt=""></span>
     <div class="uk-container uk-container-center">
       <ul class="uk-navbar-nav">
         <li class="uk-active uk-visible-large"><a href="index.html">Home</a></li>
@@ -78,14 +79,21 @@
   </nav>
 
   <!-- Slideshow -->
-  <div class="slideshow-wrapper">
-    <div class="uk-container uk-container-center">
+  <div class="home-header">
+    <div >
+      <h1 id="home-h1"><span style=color:#287bff;”>Fast </span>and<span style=color:#287bff;> Simple </span> online quote maker.</h1>
+      <h2 id="home-h2">Turn quotes into a beautiful graphic for any purpose by combining quotes and high quality background images.</h2>
+      <p id="home-p" >No design skill required.</p>
+    </div>
+    <div class="uk-container uk-container-center slideshow">
       <div class="uk-grid">
         <div class="uk-width-1-1">
+          <button id='get-started-button' class="uk-button">Get Started</button>
           <div class="uk-slidenav-position" data-uk-slideshow>
             <ul class="uk-slideshow" data-uk-slideshow="{animation: 'swipe'}">
-              <li><img src="assets/flat-background.png" alt=""></li>
-              <li><img src="assets/quote-background.png" alt=""></li>
+              <li><img src="assets/happy.jpg" alt=""></li>
+              <li><img src="assets/dog.jpg" alt=""></li>
+              <li><img src="assets/party.jpg" alt=""></li>
             </ul>
             <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous"
               data-uk-slideshow-item="previous"></a>
@@ -101,21 +109,6 @@
   </div>
   <!-- slideshow wrapper -->
 
-  <!-- Get Started -->
-  <div class="get-started-wrapper">
-    <div class="uk-container uk-container-center">
-      <div class="uk-grid">
-        <div class="uk-width-1-1">
-          <h1>Get Started</h1>
-          <button id='get-started-button' class="uk-button-large">Go</button>
-        </div>
-        <!-- column -->
-      </div>
-      <!-- grid -->
-    </div>
-    <!-- container -->
-  </div>
-  <!-- get started wrapper -->
 
   <!-- Mobile Sidebar -->
   <div id="sidebar" class="uk-offcanvas">

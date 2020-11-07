@@ -23,15 +23,69 @@
   float: right;
 }
 
+.logo {
+  width: 40px;
+  position: absolute;
+  border-radius: 5px;
+  margin-top: 9px;
+  margin-left: 20px;
+}
+
 h1 {
   font-family: sans-serif;
   margin-bottom: 20px;
   font-size: 36px;
 }
 
+.home-header {
+  margin: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 #header-h1 {
   padding-top: auto;
   margin-bottom: auto;
+  color: rgb(88, 88, 88);
+}
+
+#bio-h2 {
+  color: rgb(88, 88, 88)!important;
+}
+
+#bio-p {
+  color: rgb(156, 156, 156);
+}
+
+#home-h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 42px;
+  font-family: inherit;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #535353
+}
+
+#home-h2 {
+  text-align: center;
+  color: rgb(129, 129, 129);
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-size: 21px;
+}
+
+#home-p {
+  text-align: center;
+  color: rgb(129, 129, 129);
+  font-weight: 400;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  font-size: 16px;
 }
 
 .header-wrapper {
@@ -42,6 +96,10 @@ h1 {
 .header-grid {
   margin-top: auto !important;
   margin-bottom: auto;
+}
+
+.slideshow {
+  margin-top: -80px;
 }
 
 .bio-wrapper {
@@ -66,13 +124,13 @@ h1 {
 }
 
 .quote-restart-btn {
-  background-color: white !important; 
+  background-color: white !important;
   color: #287bff !important;
   border-radius: 5px;
   border: none;
   float: left;
   margin-top: 15px;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 .quote-restart-btn:hover {
@@ -104,11 +162,23 @@ h1 {
   font-family: sans-serif;
 }
 
+.get-started-wrapper {
+  margin-top: -50px;
+}
+
 #get-started-button {
   background-color: #287bff;
   color: white;
   border-radius: 5px;
   border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .slideset-wrapper {
@@ -125,7 +195,7 @@ h1 {
 
 /* images */
 .custom-overlay {
-  background-color: rgb(0,0,0,.4)!important;
+  background-color: rgb(0, 0, 0, 0.4) !important;
   padding-top: 10px;
   padding-bottom: 10px;
   color: white;
