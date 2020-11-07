@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,29 +40,25 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./develop/style.css" />
 </head>
-  
-  <body>
-    <!-- Navigation Bar Visible on Large Viewports-->
-    <nav class="uk-navbar">
-      <span><img class="logo" src="/assets/logo.png" alt=""></span>
-      <div class="uk-container uk-container-center">
-        <ul class="uk-navbar-nav">
-          <li class="uk-parent uk-visible-large">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="uk-parent uk-visible-large">
-            <a href="developers.html">Developers</a>
-          </li>
-        </ul>
-        <!-- Hamburger Menu Button Hidden on Large Viewports-->
-        <button
-          id="sidebar-button"
-          href="#sidebar"
-          class="uk-button uk-navbar-toggle uk-hidden-large"
-          data-uk-offcanvas="{target:'#sidebar'}"
-        ></button>
-      </div>
-    </nav>
+
+<body>
+  <!-- Navigation Bar Visible on Large Viewports-->
+  <nav class="uk-navbar">
+    <span><img class="logo" src="./assets/logo.png" alt=""></span>
+    <div class="uk-container uk-container-center">
+      <ul class="uk-navbar-nav">
+        <li class="uk-parent uk-visible-large">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="uk-parent uk-visible-large">
+          <a href="developers.html">Developers</a>
+        </li>
+      </ul>
+      <!-- Hamburger Menu Button Hidden on Large Viewports-->
+      <button id="sidebar-button" href="#sidebar" class="uk-button uk-navbar-toggle uk-hidden-large"
+        data-uk-offcanvas="{target:'#sidebar'}"></button>
+    </div>
+  </nav>
 
   <!-- Search Bar -->
   <div class="uk-grid">
@@ -71,7 +67,7 @@
       <form class="uk-form">
         <fieldset data-uk-margin>
           <!-- Search Input Field -->
-          <input type="text" placeholder="ex. tokyo" class="uk-width-1-2" />
+          <input type="text" placeholder="ex. Tokyo" class="uk-width-1-2" />
           <!-- Search Button -->
           <button id="search-button" class="uk-button">Go</button>
         </fieldset>
