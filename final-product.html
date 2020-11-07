@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | quotePic</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css"
+        integrity="sha512-j6niQhNEtTc110QAJiLnCnx/mloc73EcsfVdMgV8R2pdgoY409h3FH+Rn/YaiFsZwD+kAhZXtBhAZgTX/Ybt+w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js"
+        integrity="sha512-qYyOK0fJg7mM3DWI8oPbGnkv3nFOh9EzLsQV+SQSJ3HvC5NtmX5orKU7LcGOo9b0XrG3BzvtOJ0rRqfkEbt1Dw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.css"
+        integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.min.css"
+        integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.css"
+        integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.css"
+        integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.min.css"
+        integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.min.css"
+        integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.almost-flat.css"
+        integrity="sha512-qRfnSyoDELiaatSeaKMtIb3xumAq4aJQXCFIhKn8uBVXWXng3/m7U0+TiuBhfGB8WJ8pUr654rQ8nsIZqbqxHA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.almost-flat.min.css"
+        integrity="sha512-DkvvvFX378AbI63mLDmiru0dHLk1a3GrSd6cf3xuyqNwmEx3RKq9JdO8bdiZzZtNN9bsu2BIN2Dn9A3MNM5H0g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.css"
+        integrity="sha512-qRfnSyoDELiaatSeaKMtIb3xumAq4aJQXCFIhKn8uBVXWXng3/m7U0+TiuBhfGB8WJ8pUr654rQ8nsIZqbqxHA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.gradient.css"
+        integrity="sha512-qRfnSyoDELiaatSeaKMtIb3xumAq4aJQXCFIhKn8uBVXWXng3/m7U0+TiuBhfGB8WJ8pUr654rQ8nsIZqbqxHA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.gradient.min.css"
+        integrity="sha512-DkvvvFX378AbI63mLDmiru0dHLk1a3GrSd6cf3xuyqNwmEx3RKq9JdO8bdiZzZtNN9bsu2BIN2Dn9A3MNM5H0g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slideshow.min.css"
+        integrity="sha512-DkvvvFX378AbI63mLDmiru0dHLk1a3GrSd6cf3xuyqNwmEx3RKq9JdO8bdiZzZtNN9bsu2BIN2Dn9A3MNM5H0g=="
+        crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./develop/style.css" />
+</head>
+
+<body>
+    <!-- Navigation Bar Visible on Large Viewports-->
+    <nav class="uk-navbar">
+        <div class="uk-container uk-container-center">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active uk-visible-large"><a href="index.html">Home</a></li>
+                <li class="uk-parent uk-visible-large"><a href="developers.html">Developers</a></li>
+            </ul>
+            <!-- Hamburger Menu Button Hidden on Large Viewports-->
+            <button id="sidebar-button" href="#sidebar" class="uk-button uk-navbar-toggle uk-hidden-large"
+                data-uk-offcanvas="{target:'#sidebar'}"></button>
+        </div>
+    </nav>
+    <!-- Mobile Sidebar -->
+    <div id="sidebar" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+            <ul class="uk-nav uk-nav-offcanvas">
+                <li class="uk-active"><a href="./index.html">Home</a></li>
+                <li class="uk-parent"><a href="./developers.html">Developers</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-container uk-container-center">
+        <canvas id="canvas" style="border: .5px solid black;" height="830px" width="553">Sorry. Canvas not supported.
+            Try newest version of Google Chrome.</canvas>
+    </div>
+    <!-- UIkit Javascript Components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.js"
+        integrity="sha512-Ok78aZHcEkPywSIJW2cV5fpt8W2UuF+xpiCgOFJB2X/KfZIGFGM0hHgLYwfCF6YMKA3F4wKB9lcr4rFk7dQZOQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow.min.js"
+        integrity="sha512-JhBjb6CAwY/C76ZJZfXTWak7ickoVivZieDm/sbhsKYFJQmmu24MnJ3bCFTEwH4sno3KmKGXUiSo0cqtf9nmbA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow-fx.min.js"
+        integrity="sha512-XWpenWjKLCDdsrx9pptv/u20I3mbfoCBO4AxkMHwsoHp+hD3eivdj5lReC1UdPMRIxCLh3nLGVywN7nWvh9JgQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideshow-fx.js"
+        integrity="sha512-efzLZ3vwl3eoK+a31j2dewPIoyw9gTin3MLtAfrZ0GIZkLOP+PvFKplLtw3Fpsm5/VOxKiqfpj1yquNebkDSmg=="
+        crossorigin="anonymous"></script>
+    <!-- html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+        integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"
+        integrity="sha512-jzL0FvPiDtXef2o2XZJWgaEpVAihqquZT/tT89qCVaxVuHwJ/1DFcJ+8TBMXplSJXE8gLbVAUv+Lj20qHpGx+A=="
+        crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="./develop/final-product.js"></script>
+</body>
+
+</html>
