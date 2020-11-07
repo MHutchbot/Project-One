@@ -90,8 +90,6 @@ The following gif shows the application's appearance and functionality:
 
 ![Normal Flow Gif](https://github.com/MHutchbot/Project-One/blob/master/assets/gifs/Home%20_%20quotePic.gif)
 
-![Mistake Flow Gif](https://github.com/MHutchbot/Project-One/blob/master/assets/gifs/Quote-Search%20_%20quotePic.gif)
-
 ### Repository Quality: 10%
 
 * Repository has a unique name.
