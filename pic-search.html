@@ -1,67 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Picture Selection | quotePic</title>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- UIkit CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css"
-      integrity="sha512-j6niQhNEtTc110QAJiLnCnx/mloc73EcsfVdMgV8R2pdgoY409h3FH+Rn/YaiFsZwD+kAhZXtBhAZgTX/Ybt+w=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js"
-      integrity="sha512-qYyOK0fJg7mM3DWI8oPbGnkv3nFOh9EzLsQV+SQSJ3HvC5NtmX5orKU7LcGOo9b0XrG3BzvtOJ0rRqfkEbt1Dw=="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.css"
-      integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.min.css"
-      integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.css"
-      integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.css"
-      integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.min.css"
-      integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.min.css"
-      integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
-      crossorigin="anonymous"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./develop/style.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picture Selection | quotePic</title>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.css"
+    integrity="sha512-j6niQhNEtTc110QAJiLnCnx/mloc73EcsfVdMgV8R2pdgoY409h3FH+Rn/YaiFsZwD+kAhZXtBhAZgTX/Ybt+w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.js"
+    integrity="sha512-qYyOK0fJg7mM3DWI8oPbGnkv3nFOh9EzLsQV+SQSJ3HvC5NtmX5orKU7LcGOo9b0XrG3BzvtOJ0rRqfkEbt1Dw=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.css"
+    integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.almost-flat.min.css"
+    integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.css"
+    integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.css"
+    integrity="sha512-X5MiGS6BiKQQdt2/q5bVIDnkmqd6gycuBa9TVxH3RgSMema3ggxKx0z2kZCTA8tA9WOhY6U28PAezSOX3HlepQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.gradient.min.css"
+    integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/slidenav.min.css"
+    integrity="sha512-Y7b7dlaDN/MDB/QEIL21PRYGWeUfHgrtK4HQ0P7/ANwiOewmezJKNAkOEBZwuZ4JK/Ijk+mSTXvbDEs7OhIuIg=="
+    crossorigin="anonymous" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./develop/style.css" />
+</head>
 
 <head>
   <meta charset="UTF-8" />
@@ -102,105 +80,87 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./develop/style.css" />
 </head>
-    <nav class="uk-navbar">
-      <span><img class="logo" src="/assets/logo.png" alt=""></span>
-      <div class="uk-container uk-container-center">
-        <ul class="uk-navbar-nav">
-          <li class="uk-parent uk-visible-large">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="uk-parent uk-visible-large">
-            <a href="developers.html">Developers</a>
-          </li>
-        </ul>
-        <!-- Hamburger Menu Button Hidden on Large Viewports-->
-        <button
-          id="sidebar-button"
-          href="#sidebar"
-          class="uk-button uk-navbar-toggle uk-hidden-large"
-          data-uk-offcanvas="{target:'#sidebar'}"
-        ></button>
-      </div>
-    </nav>
+<nav class="uk-navbar">
+  <span><img class="logo" src="/assets/logo.png" alt=""></span>
+  <div class="uk-container uk-container-center">
+    <ul class="uk-navbar-nav">
+      <li class="uk-parent uk-visible-large">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="uk-parent uk-visible-large">
+        <a href="developers.html">Developers</a>
+      </li>
+    </ul>
+    <!-- Hamburger Menu Button Hidden on Large Viewports-->
+    <button id="sidebar-button" href="#sidebar" class="uk-button uk-navbar-toggle uk-hidden-large"
+      data-uk-offcanvas="{target:'#sidebar'}"></button>
+  </div>
+</nav>
 
-    <!-- Slideset -->
-    <div class="slideset-wrapper">
-      <a href="quote-search.html" class="uk-button quote-restart-btn">Restart</a>
-      <div class="uk-container uk-container-center">
-        <div class="uk-grid">
-          <div class="uk-width-1-1">
-            <!-- Slideset -->
-            <div
-              data-uk-slideset="{small: 1, medium: 2, large: 3, animation: 'slide-horizontal', duration: 200}"
-            >
-              <div class="uk-slidenav-position">
-                <ul class="uk-grid uk-slideset">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <a
-                  href=""
-                  class="uk-slidenav uk-slidenav-previous"
-                  data-uk-slideset-item="previous"
-                ></a>
-                <a
-                  href=""
-                  class="uk-slidenav uk-slidenav-next"
-                  data-uk-slideset-item="next"
-                ></a>
-              </div>
-            </div>
+<!-- Slideset -->
+<div class="slideset-wrapper">
+  <a href="quote-search.html" class="uk-button quote-restart-btn">Restart</a>
+  <div class="uk-container uk-container-center">
+    <div class="uk-grid">
+      <div class="uk-width-1-1">
+        <!-- Slideset -->
+        <div data-uk-slideset="{small: 1, medium: 2, large: 3, animation: 'slide-horizontal', duration: 200}">
+          <div class="uk-slidenav-position">
+            <ul class="uk-grid uk-slideset">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <a href="" class="uk-slidenav uk-slidenav-previous" data-uk-slideset-item="previous"></a>
+            <a href="" class="uk-slidenav uk-slidenav-next" data-uk-slideset-item="next"></a>
           </div>
         </div>
-        <!-- column -->
       </div>
-      <!-- grid -->
     </div>
-    <!-- container -->
+    <!-- column -->
   </div>
-  <!-- slideset wrapper -->
-  <!-- <div class="uk-container uk-container-center">
-    <img src="" alt="quotePic-final" id="final-product">
-    <!-- <canvas id="canvas" style="border: .5px solid black;" height="830px" width="553">Sorry. Canvas not supported. -->
-  <!-- Try newest version of Google Chrome.</canvas> -->
-  </div> -->
-  <!-- Mobile Sidebar -->
-  <div id="sidebar" class="uk-offcanvas">
-    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
-      <ul class="uk-nav uk-nav-offcanvas">
-        <li class="uk-parent"><a href="./index.html">Home</a></li>
-        <li class="uk-parent"><a href="./developers.html">Developers</a></li>
-      </ul>
-    </div>
-  </div>
+  <!-- grid -->
+</div>
+<!-- container -->
+</div>
+<!-- slideset wrapper -->
 
-  <!-- UIkit Javascript Components -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideset.js"
-    integrity="sha512-HwsRCYlib9nNzWuR06+LKqI/9dh5tvGTxWuDqK8abtO10/sCpUG9k2cLzcSUZjg3+1ETPBaWa7plhQTa+F1ofQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideset.min.js"
-    integrity="sha512-W/Vbo/MxZtKhlECYrXJf6p4fjdp3j0yUwFQDKl3JsGtdzm5WBUt/RJJDj0sKIQXvM+hsX68MgqiHPA98/DuBwg=="
-    crossorigin="anonymous"></script>
-  <!-- html2canvas -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
-    integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"
-    integrity="sha512-jzL0FvPiDtXef2o2XZJWgaEpVAihqquZT/tT89qCVaxVuHwJ/1DFcJ+8TBMXplSJXE8gLbVAUv+Lj20qHpGx+A=="
-    crossorigin="anonymous"></script>
-  <!-- Javascript -->
-  <script src="./develop/FileSaver.js"></script>
-  <script src="./develop/pic-search.js"></script>
+<!-- Mobile Sidebar -->
+<div id="sidebar" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <ul class="uk-nav uk-nav-offcanvas">
+      <li class="uk-parent"><a href="./index.html">Home</a></li>
+      <li class="uk-parent"><a href="./developers.html">Developers</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- UIkit Javascript Components -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideset.js"
+  integrity="sha512-HwsRCYlib9nNzWuR06+LKqI/9dh5tvGTxWuDqK8abtO10/sCpUG9k2cLzcSUZjg3+1ETPBaWa7plhQTa+F1ofQ=="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/slideset.min.js"
+  integrity="sha512-W/Vbo/MxZtKhlECYrXJf6p4fjdp3j0yUwFQDKl3JsGtdzm5WBUt/RJJDj0sKIQXvM+hsX68MgqiHPA98/DuBwg=="
+  crossorigin="anonymous"></script>
+<!-- html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+  integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"
+  integrity="sha512-jzL0FvPiDtXef2o2XZJWgaEpVAihqquZT/tT89qCVaxVuHwJ/1DFcJ+8TBMXplSJXE8gLbVAUv+Lj20qHpGx+A=="
+  crossorigin="anonymous"></script>
+<!-- Javascript -->
+<script src="./develop/FileSaver.js"></script>
+<script src="./develop/pic-search.js"></script>
 </body>
 
 </html>

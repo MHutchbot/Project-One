@@ -1,60 +1,130 @@
-# Unit 7: Project 1
+# Project 1
 
-## Overview
-Welcome to Project 1! This is an important step in your full-stack journey as you will now use your newly acquired skills and knowledge to build web application from scratch. With your team, you will conceive and execute a design that solves a real-world problem by integrating data received from multiple server-side API requests. Because you will be working collaboratively, you will learn agile development methodologies and implement feature and bug fixes using the git branch workflow and pull requests.
+## Application Requirements
 
-## Key Topics
+Your project should fulfill the following requirements:
 
-The following topics will be covered in this unit:
+* Use a CSS framework other than Bootstrap.
 
-  * Server-side APIs
+* Be deployed to GitHub Pages.
 
-  * Agile software development
+* Be interactive (i.e., accept and respond to user input).
 
-## Learning Objectives
+* Use at least two server-side APIs.
 
-You will be employer-ready if you are able to:
-  
-  * Speak technically about a feature you implemented in your project
+* Does not use alerts, confirms, or prompts (use modals).
 
-  * Explain and execute git branching workflow in a collaborative project
+* Use client-side storage to store persistent data.
+* Be responsive.
 
-  * Resolve merge conflicts
+* Have a polished UI.
 
-  * Explain agile software development
+* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
-  * Design, build, and deploy a client-side web application using GitHub Pages
+* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
 
-  * Prepare a professional presentation and repository README for your project
 
-## Technical Interview Preparation
+## Presentation 
 
-You will be employer-competitive if you are able to solve the following algorithms.
+Presentation: [project presentation template](https://docs.google.com/presentation/d/1r5nsthn9NuqNgFx0A1x0QIs3V1x_I4mAf05W_4Jk3P8/edit?usp=sharing) to address the following: 
 
-### Algorithms
+* Elevator pitch: a one minute description of your application
 
-Practicing algorithm-based interview questions is one of the best ways to prepare for interviews. 
+* Concept: What is your user story? What was your motivation for development?
 
-  * [01-swap-case](./03-Algorithms/01-swap-case)
+* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
 
-  * [02-longest-word](./03-Algorithms/02-longest-word)
+* Demo: Show your stuff!
 
-  * [03-acronym-builder](./03-Algorithms/03-acronym-builder)
+* Directions for Future Development
 
-  * [04-reverse-words](./03-Algorithms/04-reverse-words)
-  
-  ## Deployment
-  * https://mhutchbot.github.io/Project-One/
+* Links to the deployed application and the GitHub repository
 
-## Resources
 
-Here are some additional resources to help solidify the topics covered in this unit:
+## Grading Metrics 
 
-  * [📖 Agile Methodology](https://en.wikipedia.org/wiki/Agile_software_development)
+| Metric                | Weight | 
+| ---                   | ---    |
+| Technical Criteria    | 25%    |
+| Concept               | 10%    |
+| Deployment            | 20%    |
+| Repository Quality    | 10%    |
+| Application Quality   | 15%    |
+| Presentation          | 10%    |
+| Collaboration         | 10%    |
 
-  * [📖 Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
-  
-  * [📖 Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
 
----
-© 2020 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+## Grading Requirements
+
+This project is graded based on the following criteria:
+
+### Technical Acceptance Criteria: 25%
+
+* Satisfies the following code requirements:
+
+  * Application uses at least two server-side APIs.
+
+  * Application uses client-side storage to store persistent data.
+
+  * Application doesn't use JS alerts, prompts, or confirms (uses modals instead).
+
+  * Application uses a CSS framework other than Bootstrap.
+
+  * Application is interactive (accepts and responds to user input)
+
+### Concept 10%
+
+* Application should be a unique and novel idea.
+
+* Your group should clearly and concisely articulate your project idea.
+
+### Deployment: 20%
+
+* Live URL: https://mhutchbot.github.io/Project-One/
+
+* Application GitHub URL: https://github.com/MHutchbot/Project-One
+
+## Mock-Up
+
+The following gif shows the application's appearance and functionality:
+
+![Normal Flow Gif](./assets/gifs/Home_quotePic.gif)
+
+![Mistake Flow Gif](./assets/gifs/Quote-Search_quotePic.gif)
+
+### Repository Quality: 10%
+
+* Repository has a unique name.
+
+* Repository follows best practices for file structure and naming conventions.
+
+* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+
+* Repository contains multiple descriptive commit messages.
+
+* Repository contains a quality README file with description, screenshot, and link to deployed application.
+
+### Application Quality: 15%
+
+* Application user experience is intuitive and easy to navigate.
+
+* Application user interface style is clean and polished.
+
+* Application is responsive.
+
+### Presentation 10%
+
+* Presentation: [Project Presentation Template](https://docs.google.com/presentation/d/1r5nsthn9NuqNgFx0A1x0QIs3V1x_I4mAf05W_4Jk3P8/edit?usp=sharing).
+
+### Collaboration 10%
+
+* There are no major disparities in the number of GitHub contributions between group members.
+
+
+## Submission on BCS
+
+Each member is required to submit the following:
+
+* The URL of the deployed application.
+
+* The URL of the GitHub repository.
